@@ -1,1 +1,43 @@
-{}
+{[
+    {
+        "id": "47f08a7e2eaa4391",
+        "type": "ui_template",
+        "z": "535f2d645e4b5d17",
+        "group": "52f90358f8dfb04c",
+        "name": "Thông báo & Chuyển trang",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align:center; font-size:20px; color:green;\">\n    <p id=\"success-msg\" style=\"display:none;\">✅ Điều khiển Thành công! </p>\n</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(payload) {\n        if (payload === 'redirect') {\n            document.getElementById('success-msg').style.display = 'block';\n            setTimeout(() => {\n                window.location.href = \"https://cisat.hcmute.edu.vn/\";\n            }, 3000);\n        } else {\n            document.getElementById('success-msg').style.display = 'none';\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 940,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52f90358f8dfb04c",
+        "type": "ui_group",
+        "name": "Nhập đèn cần tắt",
+        "tab": "dashboard_tab",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dashboard_tab",
+        "type": "ui_tab",
+        "name": "Điều khiển đèn",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]}
