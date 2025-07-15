@@ -8,7 +8,7 @@
     "start": "node-red"
   },
   "dependencies": {
-    "node-red": "^3.1.0"
+    "node-red": "^3.1.0",
     "node-red-dashboard": "^3.6.5"
   }
 }
