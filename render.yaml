@@ -1,11 +1,10 @@
-
 services:
   - type: web
     name: node-red
     env: node
     plan: free
     buildCommand: "npm install"
-    startCommand: "npm start"
+    startCommand: node-red -s .node-red/settings.js -u .node-red
     autoDeploy: true
     envVars:
       - key: NODE_ENV
