@@ -1,5 +1,5 @@
 module.exports = {
-    flowFile: 'flows.json', // ⚠️ Flow JSON bạn đang dùng
+    flowFile: 'flows.json', //  Flow JSON bạn đang dùng
     uiPort: process.env.PORT || 1880,
 
     // Để bảo mật nếu bạn muốn thêm sau
