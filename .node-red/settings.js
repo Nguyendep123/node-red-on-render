@@ -7,6 +7,12 @@ module.exports = {
 
     functionGlobalContext: {}, // Cho phép dùng biến toàn cục
 
+    editorTheme: {
+        projects: {
+            enabled: true
+        }
+    },
+
     logging: {
         console: {
             level: "info",
@@ -15,4 +21,3 @@ module.exports = {
         }
     }
 };
-
