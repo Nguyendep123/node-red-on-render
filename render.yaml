@@ -3,10 +3,8 @@ services:
     name: node-red
     env: node
     plan: free
-    buildCommand: "npm install"
-    startCommand: node-red -s .node-red/settings.js -u .node-red
-    autoDeploy: true
+    buildCommand: npm install
+    startCommand: node-red
     envVars:
-      - key: NODE_ENV
-        value: production
-    region: oregon
+      - key: NODE_RED_ENABLE_PROJECTS
+        value: 'true'
