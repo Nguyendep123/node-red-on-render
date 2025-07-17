@@ -5,7 +5,7 @@ services:
     plan: free
     disk:
       name: node-red-data
-      mountPath: /data
+      mountPath: /var/data
     buildCommand: npm install
     startCommand: |
   whoami && ls -al / && \
