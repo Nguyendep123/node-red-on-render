@@ -5,7 +5,7 @@
   "description": "Deploy Node-RED on Render.com",
   "main": "index.js",
   "scripts": {
-    "start": "node node_modules/node-red/red.js -s ./settings.js --userDir /data"
+    "start": "node node_modules/node-red/red.js -s .node-red/settings.js"
   },
   "dependencies": {
     "node-red": "^3.1.0",
