@@ -4,7 +4,7 @@ services:
     env: node
     plan: free
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: node-red -s settings.js
     envVars:
       - key: NODE_RED_ENABLE_PROJECTS
         value: 'true'
