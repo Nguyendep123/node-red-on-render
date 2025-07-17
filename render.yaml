@@ -8,8 +8,8 @@ services:
       mountPath: /data
     buildCommand: npm install
     startCommand: |
-  mkdir -p /data && \
-  chmod -R 777 /data && \
+  whoami && ls -al / && \
+  mkdir -p /data && chmod -R 777 /data && \
   npx node-red -s ./settings.js --userDir /data
     envVars:
       - key: NODE_RED_ENABLE_PROJECTS
