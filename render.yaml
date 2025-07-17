@@ -7,10 +7,7 @@ services:
       name: node-red-data
       mountPath: /var/data
     buildCommand: npm install
-    startCommand: |
-  whoami && ls -al / && \
-  mkdir -p /data && chmod -R 777 /data && \
-  npx node-red -s ./settings.js --userDir /data
+    startCommand: node node_modules/node-red/red.js -s ./settings.js --userDir /var/data
     envVars:
       - key: NODE_RED_ENABLE_PROJECTS
         value: 'true'
