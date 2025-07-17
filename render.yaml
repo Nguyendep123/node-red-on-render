@@ -3,11 +3,11 @@ services:
     name: node-red
     env: node
     plan: free
+    buildCommand: npm install
+    startCommand: npm start
     disk:
       name: node-red-data
       mountPath: /data
-    buildCommand: npm install
-    startCommand: node-red -s ./settings.js
     envVars:
       - key: NODE_RED_ENABLE_PROJECTS
         value: 'true'
