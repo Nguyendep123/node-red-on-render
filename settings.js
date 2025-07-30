@@ -4,6 +4,16 @@ module.exports = {
 
     // Để bảo mật nếu bạn muốn thêm sau
     // adminAuth: null,
+adminAuth: {
+    type: "credentials",
+    users: [
+        {
+            username: "NguyenKN123",
+            password: "$2b$08$6yRMJcW8UNaYbyVgTR.5rOmLMPOEekxyxjVY9uozl7kekYP6Qbgje",
+            permissions: "*"
+        }
+    ]
+},
 
     functionGlobalContext: {}, // Cho phép dùng biến toàn cục
 
